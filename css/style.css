@@ -38,3 +38,105 @@ a{
 
     box-sizing: border-box;
 }
+
+/* 
+    =============================================
+              Header Navigation Styling
+    =============================================
+*/
+
+.main-header{
+    background-color: #eeeeee;
+}
+
+.main-header .container{
+    width: 1200px;
+
+    margin: 0 auto;
+    padding-top: 45px;
+}
+
+.main-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-navigation a{
+    position: relative;
+
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 30px;
+
+    outline: none;
+}
+
+.site-navigation{
+    display: flex;
+    justify-content: space-between;
+
+    width: 440px;
+}
+
+.user-navigation{
+    width: 120px;
+}
+
+.site-navigation a,
+.user-navigation a{
+    padding: 10px 0;
+}
+
+.user-navigation a{
+    padding-left: 32px;
+}
+
+.user-navigation a::before{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 12px;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../img/cart-icon.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.nav-active::after{
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 2px;
+
+    background-color: #fb565a;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:focus{
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-navigation a:active{
+    color: #a6a6a6;
+}
+
+.header-logo:hover,
+.header-logo:focus{
+    opacity: 0.8;
+}
+
+.header-logo:active{
+    opacity: 0.3;
+}
