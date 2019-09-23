@@ -12,8 +12,6 @@
 }
 
 body{
-    max-width: 100%;
-
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -49,10 +47,12 @@ a{
     background-color: #eeeeee;
 }
 
-.main-header .container{
+.container{
     width: 1200px;
-
     margin: 0 auto;
+}
+
+.main-header .container{
     padding-top: 45px;
 }
 
@@ -140,3 +140,154 @@ a{
 .header-logo:active{
     opacity: 0.3;
 }
+
+/* 
+    =========================================
+              Header Slider Styling
+    =========================================
+*/
+
+.main-slider{
+    position: relative;
+
+    width: 1200px;
+}
+
+.main-slider input[type="radio"]{
+    display: none;
+}
+
+.main-slider .slider-controls{
+    position: absolute;
+    bottom: 110px;
+    left: 49%;
+
+    height: 10px;
+    width: 198px;
+    transform: translateX(-50%);
+    
+    text-align: center;
+    
+    z-index: 10;
+}
+
+.slider-controls label{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+
+    background-color: #fff;
+
+    border-radius: 50%;
+
+    vertical-align: top;
+
+    cursor: pointer;
+}
+
+.slider-controls label::before{
+    content: '';
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
+.btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
+.btn-3:checked ~ .slider-controls label[for="btn-3"]::before { 
+    border-color: #c1c1c1;
+}
+
+.slider-slide{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: none;
+    
+    width: 100%;
+    min-height: 430px;
+
+    overflow: hidden;
+}
+
+.slider-slide-heading{
+    margin-top: 80px;
+    margin-bottom: 25px;
+
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slider-slide-sub-heading{
+    margin-bottom: 45px;
+
+    font-weight: 400;
+}
+
+.slider-slide-btn{
+    width: 240px;
+    padding: 13px 50px;
+    margin-bottom: 80px;
+
+    text-align: center;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    background-color: #fb565a;
+}
+
+.slider-slide-btn:hover,
+.slider-slide-btn:focus{
+    background-color: #e74246;
+}
+
+.slider-slide-btn:active{
+    color: #e37376;
+
+    background: #d7373b;
+    box-shadow: 0 2px #9b2d30 inset;
+}
+
+.slider-slide-first{
+    background-image: url(../img/slide1.png);
+    background-position: 87% 100%;
+    background-repeat: no-repeat;
+}
+
+.slider-slide-second{
+    background-image: url(../img/slide2.png);
+    background-position: 94% 100%;
+    background-repeat: no-repeat;
+}
+
+.slider-slide-third{
+    background-image: url(../img/slide3.png);
+    background-position: 92% 100%;
+    background-repeat: no-repeat;
+}
+
+.btn-1:checked ~ .slider-slides .slider-slide:nth-child(1){ 
+    display: block;
+}
+
+  .btn-2:checked ~ .slider-slides .slider-slide:nth-child(2){ 
+    display: block;
+}
+
+  .btn-3:checked ~ .slider-slides .slider-slide:nth-child(3){ 
+    display: block;
+}  
