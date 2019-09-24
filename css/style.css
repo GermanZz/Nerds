@@ -407,3 +407,100 @@ hr{
 
     color: #edc265;
 }
+
+/* 
+    ==================================================
+              Main Section-About-Us Styling
+    ==================================================
+*/
+
+.about-us .columns{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 75px;
+}
+
+.column-1 h3{
+    margin-top: 40px;
+
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.column-1 p{
+    margin-top: 35px;
+
+    font-weight: 400;
+}
+
+.column-1 b{
+    display: inline-block;
+    margin-top: 45px;
+
+    text-transform: uppercase;
+}
+
+.column-1 ul{
+    margin-top: 35px;
+}
+
+.column-1 li{
+    position: relative;
+
+    margin-top: 30px;
+    padding-left: 37px;
+
+    font-weight: 400;
+}
+
+.column-1 li::before{
+    content: '';
+
+    position: absolute;
+    left: 1px;
+    top: 12px;
+    transform: translateY(-50%);
+
+    height: 2px;
+    width: 25px;
+
+    background-color: #fb565a;
+}
+
+.column-2 img{
+    margin-top: 40px;
+}
+
+.column-2 b{
+    display: block;
+    margin-top: 40px;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.column-2 table{
+    width: 360px;
+    margin-top: 50px;
+}
+
+table tr{
+    display: flex;
+    justify-content: space-between;
+}
+
+table td{
+    font-size: 45px;
+
+    text-align: center;
+}
+
+table th{
+    margin-top: 25px;
+
+    font-weight: 400;
+    line-height: 18px;
+
+    text-align: left;
+}
