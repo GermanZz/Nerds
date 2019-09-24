@@ -26,6 +26,8 @@ ul{
 
 a{
     text-decoration: none;
+
+    outline: none;
 }
 
 .btn{
@@ -503,4 +505,32 @@ table th{
     line-height: 18px;
 
     text-align: left;
+}
+
+/* 
+    =================================================
+              Main Section-Partners Styling
+    =================================================
+*/
+
+.partners-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.partners-list li:nth-child(2n+1){
+    opacity: 0.2;
+}
+
+.partners-list li:nth-child(2n+1):hover,
+.partners-list li:focus{
+    opacity: 1;
+}
+
+.partners-list li:nth-child(2n+1):active{
+    opacity: 0.1;
 }
