@@ -20,6 +20,11 @@ body{
     background-color: #ffffff;
 }
 
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 ul{
     list-style: none;
 }
@@ -51,11 +56,6 @@ hr{
 
 .main-header{
     background-color: #eeeeee;
-}
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .main-header .container{
