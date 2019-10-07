@@ -973,4 +973,94 @@ iframe{
 
     text-transform: uppercase;
 }
+
+/* Price filter styling */
+
+.price-filter .range-filter{
+    width: 260px;
+    margin-top: 50px;
+}
+
+.price-filter .range-controls{
+    position: relative;
+    
+    height: 40px;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+}
+
+.range-controls .scale{
+    height: 2px;
+
+    background-color: #d7dcde;
+}
+
+.range-controls .bar{
+    width: 70%;
+    height: 2px;
+
+    background-color: #00ca74;
+}
+
+.range-controls .toggle{
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+
+    background-color: #ababab;
+
+    cursor: pointer;
+}
+
+.range-controls .toggle-min{
+    left: 16px;
+}
+
+.range-controls .toggle-max{
+    left: 160px;
+}   
+
+.price-controls{
+    font-size: 0;
+}
+
+.price-controls label{
+    display: inline-block;
+    width: 50%;
+
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price-controls input{
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+
+    font: inherit;
+    line-height: 22px;
+    text-align: center;
+    color: #283136;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.max-price{
+    text-align: right;
 }
