@@ -948,3 +948,29 @@ iframe{
     line-height: 55px;
     text-align: center;
 }
+
+/* 
+    ==============================================
+                Filter-Section Styling
+    ==============================================
+*/
+
+/* Basic filter styling */
+
+.filter{
+    width: 300px;
+    margin-top: 50px;
+}
+
+.filter .filterset{
+    border: none;
+}
+
+.filter legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+}
