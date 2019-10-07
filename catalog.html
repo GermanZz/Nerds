@@ -50,12 +50,20 @@
                 </fieldset>
                 <fieldset class="filterset grid-filter">
                     <legend>Сетка:</legend>
-                    <input id='adaptive' type="radio" checked>
-                    <label for="adaptive">Адаптивная</label>
-                    <input id='fixed' type="radio">
-                    <label for="fixed">Фикстрованная</label>
-                    <input id='responsive' type="radio">
-                    <label for="responsive">Резиновая</label>
+                    <ul>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='adaptive' name='grid-filter' type="radio" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='fixed' name='grid-filter' type="radio" disabled>
+                            <label for="fixed">Фиксированная</label>
+                        </li>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='responsive' name='grid-filter' type="radio">
+                            <label for="responsive">Резиновая</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="filterset features-filter">
                     <legend>Особенности:</legend>
