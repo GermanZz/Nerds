@@ -48,6 +48,8 @@ hr{
     opacity: 0.4;
 }
 
+/*                Catalog.html page             */
+
 /* 
     =============================================
               Header Navigation Styling
@@ -926,4 +928,23 @@ iframe{
 
 .modal-close:active{
     opacity: 0.1;
+}
+
+/*             Catalog.html page           */
+
+/* 
+    ======================================
+                Header Styling
+    ======================================
+*/
+.catalog-page .main-header{
+    padding-bottom: 100px;
+}
+
+.catalog-page .main-header h2{
+    margin-top: 60px;
+
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
 }
