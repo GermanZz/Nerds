@@ -1240,3 +1240,37 @@ iframe{
 
     cursor: default;
 }
+
+
+/* Filter "Show" button styling */
+
+.show{
+    width: 260px;
+    padding: 14px 90px;
+    margin-top: 45px;
+
+    background-color: #eeeeee;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    color: #000000;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+}
+
+.show:hover,
+.show:focus{
+    background-color: #dfdfdf;
+}
+
+.show:active{
+    background-color: #d5d5d5;
+
+    box-shadow: 0 2px inset #bfbfbf;
+
+    color: #959595;
+}
