@@ -974,6 +974,10 @@ iframe{
     text-transform: uppercase;
 }
 
+.filter label{
+    user-select: none;
+}
+
 /* Price filter styling */
 
 .price-filter .range-filter{
@@ -1088,8 +1092,11 @@ iframe{
 }
 
 .grid-filter-option{
-    display: block;
     margin-bottom: 20px;
+}
+
+.grid-filter-option:last-child{
+    margin-bottom: 0;
 }
 
 .grid-filter-option label::before{
@@ -1141,4 +1148,88 @@ iframe{
     cursor: default;
     
     opacity: 0.1;
+}
+
+/* Features filter styling */
+
+.features-filter{
+    margin-top: 40px;
+}
+
+.features-filter legend{
+    margin-bottom: 20px;
+}
+
+.features-filter-option{
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.features-filter-option:last-child{
+    margin-bottom: 0;
+}
+
+.features-filter-option label{
+    position: relative;
+
+    padding-left: 40px;
+
+    line-height: 20px;
+    font-weight: 400;
+    color: #283136;
+
+    cursor: pointer;
+}
+
+.features-filter-option label::before{
+    content: '';
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #999999;
+    border-radius: 1px;
+}
+ 
+.features-filter-option svg{
+    display: none;
+
+    position: absolute;
+    top: -2px;
+    left: 5px;
+}
+
+.features-filter-btn:checked ~ svg{
+    display: block;
+}
+
+.features-filter-btn:checked + label::before{
+    border-color: #b8b8b8;
+}
+
+.features-filter-btn:not(:disabled):hover + label{
+    color: #000000;
+}
+
+.features-filter-btn:not(:disabled):not(:checked):hover + label::before{
+    border-color: #000000;
+}
+
+.features-filter-btn:not(:disabled):hover + label::before{
+    border-color: #4d4d4d;
+}
+
+.features-filter-btn:checked:hover ~ svg path{
+    fill: #4d4d4d;
+}
+
+.features-filter-btn:disabled + label{
+    opacity: 0.1;
+
+    cursor: default;
 }

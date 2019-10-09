@@ -67,16 +67,33 @@
                 </fieldset>
                 <fieldset class="filterset features-filter">
                     <legend>Особенности:</legend>
-                    <input id='slider' type='checkbox' checked>
-                    <label for="slider">Слайдер</label>
-                    <input id='features' type='checkbox'>
-                    <label for="features">Блок Приемуществ</label>
-                    <input id='news' type='checkbox' checked>
-                    <label for="news">Новости</label>
-                    <input id='gallery' type='checkbox'>
-                    <label for="gallery">Галерея</label>
-                    <input id='cart' type='checkbox'>
-                    <label for="cart">Корзина</label>
+                    <ul>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='slider' type='checkbox' name="features-filter" checked>
+                            <label for="slider">Слайдер</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='features' type='checkbox' name="features-filter">
+                            <label for="features">Блок Приемуществ</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='news' type='checkbox' name="features-filter" checked>
+                            <label for="news">Новости</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='gallery' type='checkbox' name="features-filter" disabled>
+                            <label for="gallery">Галерея</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='cart' type='checkbox' name="features-filter">
+                            <label for="cart">Корзина</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                    </ul>
                 </fieldset>
                 <button class='btn show' type="submit">Показать</button>
             </form>
