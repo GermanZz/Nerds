@@ -1132,15 +1132,18 @@ iframe{
     background-color: #a6a6a6;
 }
 
-.grid-filter-btn:not(:disabled):hover + label{
+.grid-filter-btn:not(:disabled):hover + label,
+.grid-filter-btn:not(:disabled):focus + label{
     color: #000000;
 }
 
-.grid-filter-btn:not(:disabled):hover + label::before{
+.grid-filter-btn:not(:disabled):hover + label::before,
+.grid-filter-btn:not(:disabled):focus + label::before{
     border-color: #4d4d4d;
 }
 
-.grid-filter-btn:checked:hover + label::after{
+.grid-filter-btn:checked:hover + label::after,
+.grid-filter-btn:checked:focus + label::after{
     background-color: #4d4d4d;
 }
 
@@ -1212,19 +1215,23 @@ iframe{
     border-color: #b8b8b8;
 }
 
-.features-filter-btn:not(:disabled):hover + label{
+.features-filter-btn:not(:disabled):hover + label,
+.features-filter-btn:not(:disabled):focus + label{
     color: #000000;
 }
 
-.features-filter-btn:not(:disabled):not(:checked):hover + label::before{
+.features-filter-btn:not(:disabled):not(:checked):hover + label::before,
+.features-filter-btn:not(:disabled):not(:checked):focus + label::before{
     border-color: #000000;
 }
 
-.features-filter-btn:not(:disabled):hover + label::before{
+.features-filter-btn:not(:disabled):hover + label::before,
+.features-filter-btn:not(:disabled):focus + label::before{
     border-color: #4d4d4d;
 }
 
-.features-filter-btn:checked:hover ~ svg path{
+.features-filter-btn:checked:hover ~ svg path,
+.features-filter-btn:checked:focus ~ svg path{
     fill: #4d4d4d;
 }
 
