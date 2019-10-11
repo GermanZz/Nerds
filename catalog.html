@@ -98,6 +98,94 @@
                 <button class='btn show' type="submit">Показать</button>
             </form>
         </section>
+        <section class="products container">
+            <form action="https://echo.htmlacademy.ru" class="sorting-filter" method="GET">
+                <fieldset class="fieldset-type">
+                    <div>
+                        <legend>Сортировать:</legend>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="sorting-filter-item">
+                                <input type="radio" name="sorting" id="price" class="visually-hidden">
+                                <label for="price">По цене</label>
+                            </li>
+                            <li class="sorting-filter-item">
+                                <input type="radio" name="sorting" id="type" class="visually-hidden">
+                                <label for="type">По типу</label>
+                            </li>
+                            <li class="sorting-filter-item">
+                                <input type="radio" name="sorting" id="name" class="visually-hidden">
+                                <label for="name">По названию</label>
+                            </li>
+                        </ul>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-price">
+                    <legend class="visually-hidden">Сортировка по цене:</legend>
+                    <ul>
+                        <li class="pricing-filter-item">
+                            <input type="radio" name="price-down" id="name" class="visually-hidden">
+                            <label for="name">По убыванию</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price-up" id="name" class="visually-hidden">
+                            <label for="name">По возрастанию</label>
+                        </li class="pricing-filter-item">
+                    </ul>
+                </fieldset>
+            </form>
+            <ul class="products-list">
+                <li class="product-item">
+                    <img src="img/img-sedona.jpg.jpg" alt="Sedona">
+                    <div class="product-item-info">
+                        <h2>Sedona</h2>
+                        <p>Информационный сайт <br> для туристов</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-pink.jpg.jpg" alt="Pink">
+                    <div class="product-item-info">
+                        <h2>Pink App</h2>
+                        <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-barbershop.jpg.jpg" alt="Barbershop">
+                    <div class="product-item-info">
+                        <h2>Barbershop</h2>
+                        <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-mishka.jpg.jpg" alt="Mishka">
+                    <div class="product-item-info">
+                        <h2>Mishka</h2>
+                        <p>Интернет-магазин <br> вязаных игрушек</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-aplus.jpg.jpg" alt="Aplus">
+                    <div class="product-item-info">
+                        <h2>A plus</h2>
+                        <p>Лендинг курсов повышения <br> квалификации</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-kvast.jpg.jpg" alt="Kvast">
+                    <div class="product-item-info">
+                        <h2>Кваст</h2>
+                        <p>Промо-сайт производителя <br> крафтового кваса</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer class="main-footer">
         <section class="footer-map">

@@ -620,8 +620,6 @@ table th{
     background-color: #fb565a;
 
     border-radius: 3px;
-
-    box-sizing: border-box;
 }
 
 .write-us-btn:hover,
@@ -1209,6 +1207,8 @@ iframe{
 
 .features-filter-btn:checked ~ svg{
     display: block;
+
+    z-index: -1;
 }
 
 .features-filter-btn:checked + label::before{
@@ -1241,7 +1241,6 @@ iframe{
     cursor: default;
 }
 
-
 /* Filter "Show" button styling */
 
 .show{
@@ -1257,8 +1256,6 @@ iframe{
 
     color: #000000;
 
-    box-sizing: border-box;
-
     cursor: pointer;
 }
 
@@ -1273,4 +1270,133 @@ iframe{
     box-shadow: 0 2px inset #bfbfbf;
 
     color: #959595;
+}
+
+/* 
+    ================================================
+                Products-Section Styling
+    ================================================
+*/
+
+.catalog-page main{
+    display: flex;
+}
+
+.products{
+    margin-left: 140px;
+}
+
+/* Products-list styling */
+
+.products-list{
+    width: 760px;
+    margin-top: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-list .product-item{
+    position: relative;
+
+    margin-right: 40px;
+    margin-bottom: 75px;
+
+    text-align: center;
+}
+
+.products-list .product-item:nth-child(2n){
+    margin-right: 0;
+}
+
+.product-item{
+    position: relative;
+}
+
+.product-item::before{
+    content: '';
+
+    position: absolute;
+    top: -39px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: #ffffff;
+
+    background-image: url(../img/browser.svg);
+
+    opacity: 0.12;
+
+    transition: opacity 0.25s ease-in;
+}
+
+.product-item-info{
+    position: absolute;
+    bottom: 7px;
+
+    width: 100%;
+    min-height: 230px;
+    padding: 35px 0 40px 0;
+
+    transform: scale(0);
+    transition: transform 0.25s ease-in;
+
+    background-color: #eeeeee;
+
+    box-sizing: border-box;
+}
+
+
+.product-item-info h2{
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-item-info p{
+    margin-bottom: 30px;
+
+    color: #666666;
+    line-height: 18px;
+}
+
+.product-item-info a{
+    width: 240px;
+    padding: 13px 50px;
+
+    text-align: center;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    background-color: #fb565a;
+}
+
+.product-item-info a:hover,
+.product-item-info a:focus{
+    background-color: #e74246;
+}
+
+.product-item-info a:active{
+    color: #e37376;
+
+    background: #d7373b;
+    box-shadow: 0 2px #9b2d30 inset;
+}
+
+.product-item:hover .product-item-info{
+    transform: scale(1);
+
+    transition: transform 0.5s ease-out;
+}
+
+.product-item:hover::before{
+    opacity: 1;
+
+    transition: opacity 0.5s ease-out;
 }
