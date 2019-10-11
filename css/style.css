@@ -1400,3 +1400,54 @@ iframe{
 
     transition: opacity 0.5s ease-out;
 }
+
+/* Pagination styling */
+
+.pagination{
+    display: flex;
+
+    margin-top: -15px;
+}
+
+.pagination a{
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 13px 0;
+
+    text-align: center;
+    color: #000000;
+
+    background-color: #eeeeee;
+
+    border-radius: 3px;
+
+    box-sizing: border-box;
+}
+
+.pagination .pagination-next{
+    width: 260px;    
+}
+
+.pagination .pagination-active{
+    padding: 11.5px 0;
+
+    border: 3px solid #eeeeee;
+
+    background-color: #ffffff;
+
+    cursor: default;
+}
+
+.pagination a:not([class='pagination-active']):hover,
+.pagination a:not([class='pagination-active']):focus{
+    background-color: #dfdfdf;
+}
+
+.pagination a:not([class='pagination-active']):active{
+    color: #959595;
+
+    box-shadow: 0 3px inset #bfbfbf;
+}
