@@ -27,9 +27,179 @@
                 </ul>
             </nav>
         </div>
+        <h2>Магазин готовых шаблонов</h2>
     </header>
     <main class="container">
-
+        <section class="filter">
+            <form action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset class="filterset price-filter">
+                    <legend>Стоимость:</legend>
+                    <div class="range-filter">
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar"></div>
+                            </div>
+                            <div class="toggle toggle-min"></div>
+                            <div class="toggle toggle-max"></div>
+                        </div>
+                        <div class="price-controls">
+                            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="filterset grid-filter">
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='adaptive' name='grid-filter' type="radio" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='fixed' name='grid-filter' type="radio" disabled>
+                            <label for="fixed">Фиксированная</label>
+                        </li>
+                        <li class="grid-filter-option">
+                            <input class="grid-filter-btn visually-hidden" id='responsive' name='grid-filter' type="radio">
+                            <label for="responsive">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="filterset features-filter">
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='slider' type='checkbox' name="features-filter" checked>
+                            <label for="slider">Слайдер</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='features' type='checkbox' name="features-filter">
+                            <label for="features">Блок Приемуществ</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='news' type='checkbox' name="features-filter" checked>
+                            <label for="news">Новости</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='gallery' type='checkbox' name="features-filter" disabled>
+                            <label for="gallery">Галерея</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                        <li class="features-filter-option">
+                            <input class="features-filter-btn visually-hidden" id='cart' type='checkbox' name="features-filter">
+                            <label for="cart">Корзина</label>
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="svg-inline--fa fa-check fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" widh='25px' height='25px'><path fill="#b8b8b8" d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class='btn show' type="submit">Показать</button>
+            </form>
+        </section>
+        <section class="products container">
+            <form action="https://echo.htmlacademy.ru" class="sorting-filter" method="GET">
+                <fieldset class="fieldset-type">
+                    <h2>Сортировать:</h2>
+                    <ul>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="price" class="visually-hidden" checked>
+                            <label for="price">По цене</label>
+                        </li>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="type" class="visually-hidden">
+                            <label for="type">По типу</label>
+                        </li>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="name" class="visually-hidden">
+                            <label for="name">По названию</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="fieldset-price">
+                    <legend class="visually-hidden">Сортировка по цене:</legend>
+                    <ul>
+                        <li class="pricing-filter-item">
+                            <input type="radio" name="price-sort" id="price-low" class="visually-hidden" checked>
+                            <label for="price-low">
+                                <img src="img/icon-down-dir копия 2.png" alt="Sorting from high to low price">
+                                По убыванию</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price-sort" id="price-high" class="visually-hidden">
+                            <label for="price-high">
+                                <img src="img/icon-up-dir копия.png" alt="Sorting from low to high price">
+                                По возрастанию</label>
+                        </li class="pricing-filter-item">
+                    </ul>
+                </fieldset>
+            </form>
+            <ul class="products-list">
+                <li class="product-item">
+                    <img src="img/img-sedona.jpg.jpg" alt="Sedona">
+                    <div class="product-item-info">
+                        <h2>Sedona</h2>
+                        <p>Информационный сайт <br> для туристов</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-pink.jpg.jpg" alt="Pink">
+                    <div class="product-item-info">
+                        <h2>Pink App</h2>
+                        <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-barbershop.jpg.jpg" alt="Barbershop">
+                    <div class="product-item-info">
+                        <h2>Barbershop</h2>
+                        <p>Сайт салоны красоты. <br> Для мужчин, да.</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-mishka.jpg.jpg" alt="Mishka">
+                    <div class="product-item-info">
+                        <h2>Mishka</h2>
+                        <p>Интернет-магазин <br> вязаных игрушек</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-aplus.jpg.jpg" alt="Aplus">
+                    <div class="product-item-info">
+                        <h2>A plus</h2>
+                        <p>Лендинг курсов повышения <br> квалификации</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+                <li class="product-item">
+                    <img src="img/img-kvast.jpg.jpg" alt="Kvast">
+                    <div class="product-item-info">
+                        <h2>Кваст</h2>
+                        <p>Промо-сайт производителя <br> крафтового кваса</p>
+                        <a href="#" class="btn buy-btn">9 900 руб.</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="pagination">
+                <li>
+                    <a class="pagination-active" href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a class="pagination-next" href="#">Следующая</a>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer class="main-footer">
         <section class="footer-map">

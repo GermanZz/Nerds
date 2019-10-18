@@ -48,6 +48,8 @@ hr{
     opacity: 0.4;
 }
 
+/*                Catalog.html page             */
+
 /* 
     =============================================
               Header Navigation Styling
@@ -618,8 +620,6 @@ table th{
     background-color: #fb565a;
 
     border-radius: 3px;
-
-    box-sizing: border-box;
 }
 
 .write-us-btn:hover,
@@ -926,4 +926,618 @@ iframe{
 
 .modal-close:active{
     opacity: 0.1;
+}
+
+/*             Catalog.html page           */
+
+/* 
+    ======================================
+                Header Styling
+    ======================================
+*/
+.catalog-page .main-header{
+    padding-bottom: 100px;
+}
+
+.catalog-page .main-header h2{
+    margin-top: 60px;
+
+    font-size: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+
+/* 
+    ==============================================
+                Filter-Section Styling
+    ==============================================
+*/
+
+/* Basic filter styling */
+
+.filter{
+    width: 300px;
+    margin-top: 50px;
+}
+
+.filter .filterset{
+    border: none;
+}
+
+.filter legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+}
+
+.filter label{
+    user-select: none;
+}
+
+/* Price filter styling */
+
+.price-filter .range-filter{
+    width: 260px;
+    margin-top: 50px;
+}
+
+.price-filter .range-controls{
+    position: relative;
+    
+    height: 40px;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: #f1f1f1;
+
+    border-radius: 5px;
+}
+
+.range-controls .scale{
+    height: 2px;
+
+    background-color: #d7dcde;
+}
+
+.range-controls .bar{
+    width: 70%;
+    height: 2px;
+
+    background-color: #00ca74;
+}
+
+.range-controls .toggle{
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    width: 4px;
+    height: 4px;
+
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+
+    background-color: #ababab;
+
+    cursor: pointer;
+}
+
+.range-controls .toggle-min{
+    left: 16px;
+}
+
+.range-controls .toggle-max{
+    left: 160px;
+}   
+
+.price-controls{
+    font-size: 0;
+}
+
+.price-controls label{
+    display: inline-block;
+    width: 50%;
+
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.price-controls input{
+    width: 60px;
+    padding: 8px 10px;
+    margin-left: 10px;
+
+    font: inherit;
+    line-height: 22px;
+    text-align: center;
+    color: #283136;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.max-price{
+    text-align: right;
+}
+
+/* Grid filter styling */
+
+.grid-filter{
+    margin-top: 45px;
+}
+
+.grid-filter legend{
+    margin-bottom: 20px;
+}
+
+.grid-filter label{
+    position: relative;
+
+    padding-left: 40px;
+
+    line-height: 20px;
+    font-weight: 400;
+    color: #283136;
+
+    cursor: pointer;
+}
+
+.grid-filter-option{
+    margin-bottom: 20px;
+}
+
+.grid-filter-option:last-child{
+    margin-bottom: 0;
+}
+
+.grid-filter-option label::before{
+    content: '';
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #ffffff;
+
+    border: 4px solid #a6a6a6;
+    border-radius: 50%;
+}
+
+.grid-filter-option label::after{
+    content: '';
+
+    position: absolute;
+    top: 5px;
+    left: 9px;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+}   
+
+.grid-filter-btn:checked + label::after{
+    background-color: #a6a6a6;
+}
+
+.grid-filter-btn:not(:disabled):hover + label,
+.grid-filter-btn:not(:disabled):focus + label{
+    color: #000000;
+}
+
+.grid-filter-btn:not(:disabled):hover + label::before,
+.grid-filter-btn:not(:disabled):focus + label::before{
+    border-color: #4d4d4d;
+}
+
+.grid-filter-btn:checked:hover + label::after,
+.grid-filter-btn:checked:focus + label::after{
+    background-color: #4d4d4d;
+}
+
+.grid-filter-btn:disabled + label{
+    cursor: default;
+    
+    opacity: 0.1;
+}
+
+/* Features filter styling */
+
+.features-filter{
+    margin-top: 40px;
+}
+
+.features-filter legend{
+    margin-bottom: 20px;
+}
+
+.features-filter-option{
+    position: relative;
+
+    margin-bottom: 20px;
+}
+
+.features-filter-option:last-child{
+    margin-bottom: 0;
+}
+
+.features-filter-option label{
+    position: relative;
+
+    padding-left: 40px;
+
+    line-height: 20px;
+    font-weight: 400;
+    color: #283136;
+
+    cursor: pointer;
+}
+
+.features-filter-option label::before{
+    content: '';
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    width: 22px;
+    height: 22px;
+
+    border: 2px solid #999999;
+    border-radius: 1px;
+}
+ 
+.features-filter-option svg{
+    display: none;
+
+    position: absolute;
+    top: -2px;
+    left: 5px;
+}
+
+.features-filter-btn:checked ~ svg{
+    display: block;
+
+    z-index: -1;
+}
+
+.features-filter-btn:checked + label::before{
+    border-color: #b8b8b8;
+}
+
+.features-filter-btn:not(:disabled):hover + label,
+.features-filter-btn:not(:disabled):focus + label{
+    color: #000000;
+}
+
+.features-filter-btn:not(:disabled):not(:checked):hover + label::before,
+.features-filter-btn:not(:disabled):not(:checked):focus + label::before{
+    border-color: #000000;
+}
+
+.features-filter-btn:not(:disabled):hover + label::before,
+.features-filter-btn:not(:disabled):focus + label::before{
+    border-color: #4d4d4d;
+}
+
+.features-filter-btn:checked:hover ~ svg path,
+.features-filter-btn:checked:focus ~ svg path{
+    fill: #4d4d4d;
+}
+
+.features-filter-btn:disabled + label{
+    opacity: 0.1;
+
+    cursor: default;
+}
+
+/* Filter "Show" button styling */
+
+.show{
+    width: 260px;
+    padding: 14px 90px;
+    margin-top: 45px;
+
+    background-color: #eeeeee;
+
+    border: none;
+    border-radius: 3px;
+    outline: none;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.show:hover,
+.show:focus{
+    background-color: #dfdfdf;
+}
+
+.show:active{
+    background-color: #d5d5d5;
+
+    box-shadow: 0 2px inset #bfbfbf;
+
+    color: #959595;
+}
+
+/* 
+    ================================================
+                Products-Section Styling
+    ================================================
+*/
+
+.catalog-page main{
+    display: flex;
+}
+
+.products{
+    margin-left: 140px;
+}
+
+/* Sorting-filter styling */
+
+.sorting-filter{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+fieldset{
+    border: none;
+}
+
+.fieldset-type{
+    position: relative;
+    width: 680px;
+}
+
+.fieldset-type ul{
+    position: absolute;
+    top: 0;
+    left: 400px;
+
+    display: flex;
+    width: 320px;
+}
+
+.fieldset-type li{
+    margin-right: 25px;
+}
+
+.fieldset-type li:last-child{
+    margin-right: 40px;
+}
+
+.fieldset-type h2{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fieldset-type label{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.fieldset-type input[type='radio']:not(:checked) + label{
+    color: #b2b2b2;
+}
+
+.fieldset-type input[type='radio']:checked + label{
+    color: #000000;
+}
+
+.fieldset-type input[type='radio']:not(:checked):hover + label{
+    color: #666666;
+}
+
+.fieldset-price label{
+    font-size: 0;
+
+    opacity: 0.12;
+
+    cursor: pointer;
+}
+
+.fieldset-price ul{
+    display: flex;
+
+    margin-top: -8px;
+    margin-right: 15px;
+}
+
+.fieldset-price label:last-child{
+    margin-left: 15px;
+}
+
+.fieldset-price input[type='radio']:checked + label{
+    opacity: 1;
+}
+
+.fieldset-price input[type='radio']:not(:checked):hover + label{
+    opacity: 0.5;
+}
+
+/* Products-list styling */
+
+.products-list{
+    width: 760px;
+    margin-top: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-list .product-item{
+    position: relative;
+
+    margin-right: 40px;
+    margin-bottom: 75px;
+
+    text-align: center;
+}
+
+.products-list .product-item:nth-child(2n){
+    margin-right: 0;
+}
+
+.product-item{
+    position: relative;
+}
+
+.product-item::before{
+    content: '';
+
+    position: absolute;
+    top: -39px;
+
+    width: 100%;
+    height: 40px;
+
+    background-color: #ffffff;
+
+    background-image: url(../img/browser.svg);
+
+    opacity: 0.12;
+
+    transition: opacity 0.25s ease-in;
+}
+
+.product-item-info{
+    position: absolute;
+    bottom: 7px;
+
+    width: 100%;
+    min-height: 230px;
+    padding: 35px 0 40px 0;
+
+    transform: scaleY(0);
+    transition: transform 0.25s ease-in;
+
+    background-color: #eeeeee;
+
+    box-sizing: border-box;
+}
+
+
+.product-item-info h2{
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.product-item-info p{
+    margin-bottom: 30px;
+
+    color: #666666;
+    line-height: 18px;
+}
+
+.product-item-info a{
+    width: 240px;
+    padding: 13px 50px;
+
+    text-align: center;
+
+    border-radius: 3px;
+
+    outline: none;
+
+    background-color: #fb565a;
+}
+
+.product-item-info a:hover,
+.product-item-info a:focus{
+    background-color: #e74246;
+}
+
+.product-item-info a:active{
+    color: #e37376;
+
+    background: #d7373b;
+    box-shadow: 0 2px #9b2d30 inset;
+}
+
+.product-item:hover .product-item-info{
+    transform: scaleY(1);
+
+    transition: transform 0.5s ease-out;
+}
+
+.product-item:hover::before{
+    opacity: 1;
+
+    transition: opacity 0.5s ease-out;
+}
+
+/* Pagination styling */
+
+.pagination{
+    display: flex;
+
+    margin-top: -15px;
+}
+
+.pagination a{
+    display: inline-block;
+
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 13px 0;
+
+    text-align: center;
+    color: #000000;
+
+    background-color: #eeeeee;
+
+    border-radius: 3px;
+
+    box-sizing: border-box;
+}
+
+.pagination .pagination-next{
+    width: 260px;    
+}
+
+.pagination .pagination-active{
+    padding: 11.5px 0;
+
+    border: 3px solid #eeeeee;
+
+    background-color: #ffffff;
+
+    cursor: default;
+}
+
+.pagination a:not([class='pagination-active']):hover,
+.pagination a:not([class='pagination-active']):focus{
+    background-color: #dfdfdf;
+}
+
+.pagination a:not([class='pagination-active']):active{
+    color: #959595;
+
+    box-shadow: 0 3px inset #bfbfbf;
 }
