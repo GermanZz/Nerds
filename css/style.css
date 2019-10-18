@@ -1333,6 +1333,8 @@ fieldset{
     line-height: 18px;
     font-weight: 400;
     text-transform: uppercase;
+
+    cursor: pointer;
 }
 
 .fieldset-type input[type='radio']:not(:checked) + label{
@@ -1349,7 +1351,10 @@ fieldset{
 
 .fieldset-price label{
     font-size: 0;
+
     opacity: 0.12;
+
+    cursor: pointer;
 }
 
 .fieldset-price ul{
