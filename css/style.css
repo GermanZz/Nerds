@@ -1286,6 +1286,91 @@ iframe{
     margin-left: 140px;
 }
 
+/* Sorting-filter styling */
+
+.sorting-filter{
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+fieldset{
+    border: none;
+}
+
+.fieldset-type{
+    position: relative;
+    width: 680px;
+}
+
+.fieldset-type ul{
+    position: absolute;
+    top: 0;
+    left: 400px;
+
+    display: flex;
+    width: 320px;
+}
+
+.fieldset-type li{
+    margin-right: 25px;
+}
+
+.fieldset-type li:last-child{
+    margin-right: 40px;
+}
+
+.fieldset-type h2{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.fieldset-type label{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.fieldset-type input[type='radio']:not(:checked) + label{
+    color: #b2b2b2;
+}
+
+.fieldset-type input[type='radio']:checked + label{
+    color: #000000;
+}
+
+.fieldset-type input[type='radio']:not(:checked):hover + label{
+    color: #666666;
+}
+
+.fieldset-price label{
+    font-size: 0;
+    opacity: 0.12;
+}
+
+.fieldset-price ul{
+    display: flex;
+
+    margin-top: -8px;
+    margin-right: 15px;
+}
+
+.fieldset-price label:last-child{
+    margin-left: 15px;
+}
+
+.fieldset-price input[type='radio']:checked + label{
+    opacity: 1;
+}
+
+.fieldset-price input[type='radio']:not(:checked):hover + label{
+    opacity: 0.5;
+}
+
 /* Products-list styling */
 
 .products-list{
@@ -1339,7 +1424,7 @@ iframe{
     min-height: 230px;
     padding: 35px 0 40px 0;
 
-    transform: scale(0);
+    transform: scaleY(0);
     transition: transform 0.25s ease-in;
 
     background-color: #eeeeee;
@@ -1390,7 +1475,7 @@ iframe{
 }
 
 .product-item:hover .product-item-info{
-    transform: scale(1);
+    transform: scaleY(1);
 
     transition: transform 0.5s ease-out;
 }

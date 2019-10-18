@@ -101,25 +101,21 @@
         <section class="products container">
             <form action="https://echo.htmlacademy.ru" class="sorting-filter" method="GET">
                 <fieldset class="fieldset-type">
-                    <div>
-                        <legend>Сортировать:</legend>
-                    </div>
-                    <div>
-                        <ul>
-                            <li class="sorting-filter-item">
-                                <input type="radio" name="sorting" id="price" class="visually-hidden">
-                                <label for="price">По цене</label>
-                            </li>
-                            <li class="sorting-filter-item">
-                                <input type="radio" name="sorting" id="type" class="visually-hidden">
-                                <label for="type">По типу</label>
-                            </li>
-                            <li class="sorting-filter-item">
-                                <input type="radio" name="sorting" id="name" class="visually-hidden">
-                                <label for="name">По названию</label>
-                            </li>
-                        </ul>
-                    </div>
+                    <h2>Сортировать:</h2>
+                    <ul>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="price" class="visually-hidden" checked>
+                            <label for="price">По цене</label>
+                        </li>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="type" class="visually-hidden">
+                            <label for="type">По типу</label>
+                        </li>
+                        <li class="sorting-filter-item">
+                            <input type="radio" name="sorting" id="name" class="visually-hidden">
+                            <label for="name">По названию</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="fieldset-price">
                     <legend class="visually-hidden">Сортировка по цене:</legend>
